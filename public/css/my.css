@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.bg-success{
+    background-color: #1FB68E !important;
+}
+
+.h1{
+    color: #212529 !important;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.btn-success{
+    background-color: #1FB68E !important;
+    border: none !important;
+    border-radius: none !important;
+}
+.btn-primary{
+    background-color: #1FB68E !important;
+    border-color: white !important;
+}
+
+.btn{
+    border-radius: 10px;
+    padding: 9px 10px;
+    font-family: 'Inter', sans-serif;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    color: #1FB68E;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #1FB68E;
+    border-color: #1FB68E;
+}
+
+
+.btn:focus {
+    outline: none;
+}
+
+.table-green{
+    background-color: #1FB68E !important;
+    border-bottom: 5px solid #198165 !important;
+    color: white;
+}
+
+.table{
+    font-family: 'Inter', sans-serif !important;
+}
+
+.th{
+    font-family: 'Inter', sans-serif !important;
+}
+
+
+.td{
+    font-family: 'Inter', sans-serif !important;
+}
+
+@media (max-width: 767.98px) {
+    .h1{
+        color: #212529 !important;
+        font-family: 'Inter', sans-serif;
+        font-weight: bold;
+        font-size: 34px;
+    }
+}
+
+.form-label{
+    color: #212529 !important;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.h2{
+    color: #212529 !important;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    /* font-size: 45px; */
+}
+
+.nav-link{
+    color: #828486 !important;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.active{
+    color: #212529 !important;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+body{
+    padding-top: 86px;
+}
+
+
+.feather {
+    width: 15px;
+    height: 15px;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+  }
