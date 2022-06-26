@@ -1,34 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 body {
-    font-family: 'Inter', sans-serif;
-}
-
-.bg-success{
-    background-color: #1FB68E !important;
+    font-family: 'Inter' !important;
+    padding-top: 86px !important;
 }
 
 .h1{
     color: #212529 !important;
-    font-family: 'Inter', sans-serif;
-    font-weight: bold;
-    font-size: 45px;
+    font-weight: 700 !important;
+    font-size: 45px !important;
+}
+
+@media (max-width: 767.98px) {
+    .h1{
+        color: #212529 !important;
+        font-weight: 700 !important;
+        font-size: 35px !important;
+    }
+}
+
+.h2{
+    color: #212529 !important;
+    font-weight: 700 !important;
+    font-size: 35px !important;
+}
+
+.btn{
+    border-radius: 10px !important;
+}
+
+.btn:active,
+.btn:focus,
+.btn:hover,
+.btn:visited{
+    box-shadow: unset !important;
+    outline: 0 !important;
 }
 
 .btn-success{
     background-color: #1FB68E !important;
     border: none !important;
-    border-radius: none !important;
-}
-.btn-primary{
-    background-color: #1FB68E !important;
-    border-color: white !important;
+    padding: 9px 10px !important;
 }
 
-.btn{
-    border-radius: 10px;
-    padding: 9px 10px;
-    font-family: 'Inter', sans-serif;
+.btn-primary{
+    background-color: #1FB68E !important;
+    border: none !important;
+    padding: 9px 10px !important;
+}
+
+.nav-link{
+    color: #828486 !important;
+    font-weight: 500 !important;
+}
+
+.active{
+    color: #212529 !important;
+    font-weight: 600 !important;
+}
+
+.form-label{
+    color: #212529 !important;
+    font-weight: 500 !important;
+}
+
+.table-green{
+    background-color: #1FB68E !important;
+    border-bottom: 5px solid #198165 !important;
+    color: white !important;
 }
 
 .page-link {
@@ -38,7 +77,10 @@ body {
     text-decoration: none;
     background-color: #fff;
     border: 1px solid #dee2e6;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out;
+    background-color: 0.15s ease-in-out;
+    border-color: 0.15s ease-in-out;
+    box-shadow: 0.15s ease-in-out;
 }
 
 .page-item.active .page-link {
@@ -47,69 +89,6 @@ body {
     background-color: #1FB68E;
     border-color: #1FB68E;
 }
-
-
-.btn:focus {
-    outline: none;
-}
-
-.table-green{
-    background-color: #1FB68E !important;
-    border-bottom: 5px solid #198165 !important;
-    color: white;
-}
-
-.table{
-    font-family: 'Inter', sans-serif !important;
-}
-
-.th{
-    font-family: 'Inter', sans-serif !important;
-}
-
-
-.td{
-    font-family: 'Inter', sans-serif !important;
-}
-
-@media (max-width: 767.98px) {
-    .h1{
-        color: #212529 !important;
-        font-family: 'Inter', sans-serif;
-        font-weight: bold;
-        font-size: 34px;
-    }
-}
-
-.form-label{
-    color: #212529 !important;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-}
-
-.h2{
-    color: #212529 !important;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    /* font-size: 45px; */
-}
-
-.nav-link{
-    color: #828486 !important;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-}
-
-.active{
-    color: #212529 !important;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-}
-
-body{
-    padding-top: 86px;
-}
-
 
 .feather {
     width: 15px;
@@ -120,3 +99,8 @@ body{
     stroke-linejoin: round;
     fill: none;
   }
+
+.text-logout{
+    color: red !important;
+    font-weight: 600 !important;
+}

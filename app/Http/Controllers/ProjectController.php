@@ -22,7 +22,7 @@ class ProjectController extends Controller
      */
     public function welcome()
     {
-        $users = User::latest();
+        $users = User::oldest();
 
         if (request('search')) {
             $users->where('nama','like','%'.request('search').'%');

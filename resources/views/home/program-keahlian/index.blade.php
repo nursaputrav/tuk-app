@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-
+<div class="col-12 py-5 bg-light">
 <div class="col-11 table-responsive mx-auto px-4 mb-5 mt-5">
     <div class="clearfix">
         <h2 class="h2 mb-4 float-start">Program Keahlian.</h2>
@@ -35,4 +35,5 @@
       </tbody>
     </table>
   </div>
+</div>
 @endsection

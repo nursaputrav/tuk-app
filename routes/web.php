@@ -8,8 +8,9 @@ use App\Http\Controllers\SkemaController;
 use App\Http\Controllers\KelasController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\WelcomeController;
+use App\Http\Controllers\ProfileTukController;
+use App\Http\Controllers\GalleryController;
 
-// Route::view('/', 'welcome');
 Route::get('/', [ProjectController::class, 'welcome']);
 
 Route::middleware(['auth', 'verified'])->group(function () {
@@ -27,4 +28,6 @@ Route::middleware(['auth','verified','CheckLevel:admin'])->group(function () {
     Route::resource('/program-keahlian', ProgramKeahlianController::class);
     Route::resource('/skema', SkemaController::class);
     Route::resource('/kelas', KelasController::class);
+    Route::resource('/profile-tuk', ProfileTukController::class);
+    Route::resource('/gallery', GalleryController::class);
 });

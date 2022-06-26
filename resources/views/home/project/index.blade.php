@@ -49,7 +49,7 @@
             <label class="form-label">Foto Profile</label><br>
             <img src="{{ Auth::user()->getFotoProfile() }}" class="img-thumbnail " width="200" height="200">
 
-            <div class="col-9 mb-3 mt-5">
+            <div class="mb-3 col-12 col-sm-10 col-md-9 col-lg-9 mt-5">
                 <span class="clearfix">
                     <label class="form-label float-start">Upload Gambar Project</label>
                     <div class="form-text text-danger text-bold float-end">Min.5 Gambar</div>
@@ -65,7 +65,7 @@
           </div>
 
           <div class="col-12 col-sm-10 col-md-6 col-lg-4">
-            <div class="col-9 mb-4">
+            <div class="mb-4 col-12 col-sm-10 col-md-10 col-lg-9">
                     <label class="form-label">Skema Kompetensi</label>
                     <select class="form-select" name="skema_id">
                         <option selected disabled>Pilih Skema Kompetensi</option>
@@ -74,7 +74,7 @@
                         @endforeach
                   </select>
             </div>
-            <div class="col-9 mb-4">
+            <div class="mb-4 col-12 col-sm-10 col-md-10 col-lg-9">
                 <label class="form-label">Judul Project</label>
                 <input type="text" class="form-control @error('judul_project') is-invalid @enderror" name="judul_project" value="{{ old('judul_project') }}">
                 @error('judul_project')
@@ -83,7 +83,7 @@
                   </span>
                 @enderror
             </div>
-            <div class="col-9 mb-4">
+            <div class="mb-4 col-12 col-sm-10 col-md-10 col-lg-9">
                 <label class="form-label">Alamat Project</label>
                 <input type="text" class="form-control @error('alamat_project') is-invalid @enderror" name="alamat_project" value="{{ old('alamat_project') }}">
                 @error('alamat_project')
@@ -92,7 +92,7 @@
                   </span>
                 @enderror
             </div>
-            <div class="col-9 mb-3">
+            <div class="mb-4 col-12 col-sm-10 col-md-10 col-lg-9">
                 <label class="form-label">Dokumentasi Project</label>
                 <input type="file" name="dokumentasi_project" class="form-control @error('dokumentasi_project') is-invalid @enderror">
                   @error('dokumentasi_project')
@@ -104,8 +104,7 @@
           </div>
 
           <div class="col-12 col-sm-10 col-md-6 col-lg-4">
-
-            <div class="col-9 mb-4">
+            <div class="mb-4 col-12 col-sm-10 col-md-10 col-lg-9">
                 <label class="form-label">Login Project</label>
                 <textarea class="form-control @error('login_project') is-invalid @enderror" name="login_project" rows="3">{{ old('login_project') }}</textarea>
                 @error('login_project')
@@ -115,7 +114,7 @@
                 @enderror
             </div>
 
-            <div class="col-9 mb-4">
+            <div class="mb-4 col-12 col-sm-10 col-md-10 col-lg-9">
                 <label class="form-label">Deskripsi Project</label>
                 <textarea class="form-control @error('deskripsi') is-invalid @enderror" name="deskripsi" rows="4">{{ old('deskripsi') }}</textarea>
                 @error('deskripsi')
@@ -125,7 +124,7 @@
                 @enderror
             </div>
 
-            <button type="submit" class="col-9 btn btn-success btn-sm mt-2">Simpan Project</button>
+            <button type="submit" class="col-12 col-sm-10 col-md-10 col-lg-9 btn btn-success btn-sm mt-2">Simpan Project</button>
           </div>
         </div>
       </div>

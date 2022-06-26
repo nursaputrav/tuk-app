@@ -10,7 +10,7 @@
             <img src="{{ $user->getFotoProfile() }}" class="img-thumbnail " width="200" height="200">
           </div>
 
-          <div class="col-12 col-sm-10 col-md-6 col-lg-4">
+          <div class="col-12 col-sm-10 col-md-6 col-lg-4 mt-5">
             <div class="col-9 mb-4">
                 <label class="form-label">Nama Lengkap</label>
                 <input disabled type="text" class="form-control @error('nama') is-invalid @enderror" name="nama" value="{{ $user->nama }}">
@@ -75,7 +75,7 @@
         </div>
       </div>
 
-      <h2 class="h2 mt-2 mb-5 px-5 text-sm-center text-md-center text-lg-center">Preview Project.</h2>
+      <h2 class="h2 mt-5 mb-5 px-5 text-sm-center text-md-center text-lg-center">Preview Project.</h2>
       <div class="col-10 col-sm-10 col-md-10 col-lg-8 mx-auto">
           <div id="carouselExampleInterval" class="carousel carousel-dark slide mb-5" data-bs-ride="carousel">
               <div class="carousel-inner">

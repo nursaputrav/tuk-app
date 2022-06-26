@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-
+<div class="col-12 py-5 bg-light">
 <div class="col-11 table-responsive mx-auto px-4 mb-5 mt-5">
     <div class="clearfix">
         <h2 class="h2 mb-4 float-start">Skema Kompetensi.</h2>
@@ -24,7 +24,7 @@
                     <form action="{{ route('skema.destroy', $skema_kompetensi->id) }}" method="POST">
                         @csrf
                         @method('DELETE')
-                        <button type="submit" class="btn btn-sm btn-danger shadow ms-3 mb-2 mb-sm-0 mb-md-0 mb-lg-0">
+                        <button type="submit" class="btn btn-sm btn-danger shadow ms-3">
                             <i data-feather="trash"></i>
                         </button>
                         <a href="{{ route('skema.edit', $skema_kompetensi->id) }}" class="btn btn-sm btn-warning shadow ms-3 text-white"><i data-feather="edit-2"></i></a>
@@ -35,4 +35,5 @@
       </tbody>
     </table>
   </div>
+</div>
 @endsection

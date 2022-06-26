@@ -4,7 +4,7 @@
 <div class="col-xxl-8 px-5 py-4">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5 py-lg-0">
       <div class="col-12 col-sm-8 col-lg-6 mx-sm-auto mt-5">
-        <img src="/image/brand/hero.png" class="d-block mx-lg-auto img-fluid pe-lg-5 mt-5" width="720" loading="lazy">
+        <img src="/image/hero/green.png" class="d-block mx-lg-auto img-fluid pe-lg-5 mt-5" width="720" loading="lazy">
       </div>
       <div class="col-12 col-lg-6 ps-lg-5">
         <form method="POST" action="{{ route('verification.send') }}">
